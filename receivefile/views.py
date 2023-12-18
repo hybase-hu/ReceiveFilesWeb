@@ -13,6 +13,7 @@ def upload(request):
     uploaded_file = request.FILES['file']
     print("[+] request upload", uploaded_file)
 
+
     if request.method == "POST":
         print(request.FILES.get('file'))
         byte_data = request.FILES['file'].read()
